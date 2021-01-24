@@ -45,8 +45,9 @@ html[data-theme="dark"] {
   font-size: 40px;
   top: 50%;
   left: 50%;
+  display: inline-block;
   transform: translate(-50%, -50%);
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .animated-text span {
@@ -91,8 +92,14 @@ html[data-theme="dark"] {
   display: flex;
   font-size: 20px;
   align-items: center;
-  justify-content: center;
   flex-flow: row wrap;
+  margin-top: 0px;
+}
+
+.social-icons i{
+  color: #1a1a1a !important;
+  font-size: 18px !important;
+
 }
 
 .social-icon {
@@ -101,10 +108,10 @@ html[data-theme="dark"] {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  margin: 8px;
+  margin: 8px -4px;
   background-color: var(--bg-icon);
   border-radius: 50%;
-  box-shadow: 2px 5px 5px var(--shadow-col);
+  /*box-shadow: 2px 5px 5px var(--shadow-col);*/
   text-decoration: none;
   transition: var(--trans-props);
 }
@@ -112,60 +119,23 @@ html[data-theme="dark"] {
 .social-icon i {
   margin: auto;
   font-size: 24px;
-  color: var(--col-icon-twitter);
+  color: #1769ff;
   z-index: 1;
+  margin : 20px 11px;
   transition: var(--trans-props);
 }
 
-.dribbble i {
-  margin: auto;
-  font-size: 24px;
-  color: var(--col-icon-dribbble);
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.linkedin i {
-  margin: auto;
-  font-size: 24px;
-  color: var(--col-icon-linkedin);
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.medium i {
-  margin: auto;
-  font-size: 24px;
-  color: var(--col-icon-medium);
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.kaggle i {
-  margin: auto;
-  font-size: 24px;
-  color: var(--col-icon-kaggle);
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.github i {
-  margin: auto;
-  font-size: 24px;
-  color: var(--col-icon-github);
-  z-index: 1;
-  transition: var(--trans-props);
+.social-icons i:hover:before{
+  color: #DA3847
 }
 
-.social-icon:after {
-  content: "";
-  width: var(--link-size);
-  height: var(--link-size);
-  position: absolute;
-  transform: translate(0, var(--link-size));
-  border-radius: 50%;
-  transition: var(--trans-props);
+.social-icon i:hover {
+  color: #DA3847;
 }
 
-.social-icon.twitter:after {
-  background-color: #1da1f2;
-  box-shadow: var(--twitter);
+.social-icon.behance:after {
+  background-color: #1769ff;
+  box-shadow: var(--behance);
 }
 
 /* .social-icon.github:after {
@@ -183,8 +153,8 @@ html[data-theme="dark"] {
   box-shadow: var(--kaggle);
 }
 
-.social-icon.dribbble:after {
-  background-color: #ea4c89;
+.social-icon.fivehun:after {
+  background-color: #333333;
   box-shadow: var(--kaggle);
 }
 
@@ -195,18 +165,6 @@ html[data-theme="dark"] {
 
 /*** Social Icon Animations ***/
 
-.social-icon:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
-}
-
-.social-icon:hover i {
-  color: #fff;
-}
-
-.social-icon:hover:after {
-  transform: translate(0) scale(1.2);
-}
 
 a:hover {
   color: transparent;

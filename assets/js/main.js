@@ -29,49 +29,50 @@ function topFunction() {
 //Footer and Navbar
 
 let header = $(`
-<nav class="fixed-top black">
+<nav class="fixed-top">
 <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
+    <!-- <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>-->
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
             class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-        <li><a class="white-text" href="index.html">Home</a></li>
-        <li><a class="white-text" href="experience.html">Experience</a></li>
+    <ul class=" hide-on-med-and-down">
+        <li><a class="white-text font_nav" href="index.html">Home</a></li>
         <li><a class="white-text" href="projects.html">Projects</a></li>
-        <li><a class="white-text" href="research.html">Research</a></li>
-        <li><a class="white-text" href="education.html">Education</a></li>
-        <li><a class="white-text" href="skill.html">Skills</a></li>
-        <li><a class="white-text" href="index.html">Blog</a></li>
-        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+        <li><a class="white-text" href="skill.html">About</a></li>
+        <li><a class="white-text" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
-        <li>
-          <label for="switch-1" class="theme-switch">
-            <input class="toggle-checkbox" type="checkbox" id="switch-1" name="theme" />
-            <div class='toggle-slot'>
-              <div class='sun-icon-wrapper'>
-                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
-              </div>
-              <div class='toggle-button-1 toggle-button'></div>
-              <div class='moon-icon-wrapper'>
-                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
-              </div>
-            </div>
-          </label>
-        </li>
+
     </ul>
+        <div class="right">
+                <div class="social-icons">
+
+                    <a class="social-icon behance" href="" target="_blank" rel="author">
+                        <i class="fab fa-behance"></i>
+                    </a>
+
+                    <a class="social-icon linkedin" href="" target="_blank" rel="author">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a class="social-icon medium" href="" target="_blank" rel="author">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+
+                    <a class="social-icon fivehun" href="" target="_blank" rel="author">
+                        <i class="fab fa-500px"></i>
+                    </a>
+
+                </div>
+            </div>
 </div>
 </nav>
 
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
 <li><a href="index.html">Home</a></li>
-<li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="education.html">Education</a></li>
 <li><a href="skill.html">Skills</a></li>
-<li><a href="index.html">Blog</a></li>
-<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+
+<li><a href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
 
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -91,67 +92,22 @@ let header = $(`
         </li>
 </ul>`);
 
-let footer = $(`
-<footer class="webintern-footer">
-<div class="footer-left">
-  <div class="footer-img">
-    <img src="assets/images/John-Doe1.png" alt="User img" style="width:220px;">
-  </div>
-  <div class="footer-text">
-    <p style="color:#cccccc">"Develop a passion for learning. If you do, you will never cease to grow."</p>
-  </div>
-  <div class="footer-icons">
-    <a href="#" class="twitter sub-footer-icon">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="#" class="instagram sub-footer-icon">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="#" class="linkedin sub-footer-icon">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="#" class="git sub-footer-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="#" class="medium sub-footer-icon">
-      <i class="fab fa-medium"></i>
-    </a>
-    <a href="#" class="dribbble sub-footer-icon">
-      <i class="fab fa-dribbble"></i>
-    </a>
-    <a href="#" class="kaggle sub-footer-icon">
-      <i class="fab fa-kaggle" id="kaggle-icon"></i>
-    </a>
-  </div>
-  <div class="footer-email">
-    <a href="#" class="email-icon" style="color:#cccccc;">
-      <i class="fas fa-envelope-open"></i>
-    </a>
-  </div>
-</div>
-<div class="footer-right">
-  <h6 style="color:#fff;">Get in Touch</h6>
-  <form>
-    <div class="name">
-      <input type="text" name="name" placeholder="Enter Name" required>
-    </div>
-    <div class="email">
-      <input type="email" name="email" placeholder="Enter Email" required>
-    </div>
-    <div class="msg">
-      <textarea type="text" name="msg" placeholder="Message" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-  </form>
-</div>
+// let footer = $(`
+// <footer class="webintern-footer">
+// <div class="footer-left">
+//    <div class="footer-text">
+//     <p style="color:#cccccc">"Develop a passion for learning. If you do, you will never cease to grow."</p>
+//   </div>
+  
+//   <div class="footer-email">
+//     <a href="#" class="email-icon" style="color:#cccccc;">
+//       <i class="fas fa-envelope-open"></i>
+//     </a>
+//   </div>
+// </div>
 
-<!-- <div class="tt-copy">
-  <div class="container col-sm-6">
-   <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
-  </div>
-</div> -->
 
-</footer>`);
+// </footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);

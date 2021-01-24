@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+/*@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../fonts/brandon-grotesque-regular-italic-58a8a456c4724.otf") format('OpenType');
+       
+}*/
+
 
 html[data-theme="light"] {
   --bg1-color: #fff;

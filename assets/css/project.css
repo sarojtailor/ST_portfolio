@@ -28,6 +28,13 @@ a:hover {
 
 .skill-card{
 	border: none;
+  box-shadow: none;
+  
+}
+
+.skill-card .card_image{
+  transition: .5s ease;
+  opacity: 1;
 }
 
 .row{
@@ -37,6 +44,32 @@ a:hover {
 
 .card{
   width: 100%;
+
+}
+
+.head_projects{
+  font-size: 45px;
+    margin: 6rem 0;
+}
+
+.overlay_proj{
+   transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+    padding: 10px 33px;
+    background: #DA3847;
+    border-radius: 133px;
+    color: white;
+    font-weight: bold;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay_proj:hover{
+  color: #fff;
 }
 
 .column{
@@ -46,9 +79,13 @@ a:hover {
 
 .page-content {
   padding: 1rem;
-  max-width: 1124px;
+  /*max-width: 1124px;*/
   /* margin: 1rem auto; */
 }
+
+  .card_image:hover .card{
+    width: 42% !important;
+  }
 
 @media(min-width: 60rem)
 {
@@ -57,15 +94,31 @@ a:hover {
   }
 
   .card{
-    width: 43%;
+    width: 44%;
     column-gap: 3rem;
     margin: 0 2rem;
-    transition: width 0.8s;
+    border-radius: 15px;
+    /*transition: width 0.8s;*/
+    transition: 0.5s;
   }
 
-  .card:hover{
-    width:45%;
+  .skill-card:hover .hahaha{
+     opacity: 0.3;
+     filter: grayscale(100%);
+     width: 34%;
+
   }
+
+.card:hover {
+  /*width: 42%;*/
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+  .skill-card:hover .overlay_proj{
+    opacity: 1;
+  }
+
   .column{
     margin-left: 1.5rem;
   }
@@ -99,7 +152,8 @@ a:hover {
   min-height: 24rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
+  border-radius: 15px;
+  /*box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);*/
 }
 
 .card .wrapper:hover .data {
@@ -107,17 +161,18 @@ a:hover {
 }
 
 .card .data {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   width: 100%;
   transition: transform 0.3s;
-  background: rgba(0,0,0,0.55);
+  text-align: center;
+  /*background: rgba(0,0,0,0.55);*/
 }
 
 @media(min-width: 60rem)
 {
   .card .data{
-    height: 66%;
+    height: 30%;
   }
 }
 
@@ -155,12 +210,6 @@ a:hover {
   margin: 0;
 }
 
-@media(min-width: 60rem)
-{
-  .card .title-div{
-    padding-bottom: 2.3rem;
-  }
-}
 
 .card .title {
   margin-top: 0em;
@@ -294,12 +343,12 @@ input[type="text"]{
 
 .skill-card .data {
   color: #fff;
-  transform: translateY(calc(60px + 4em));
+  /*transform: translateY(calc(60px + 4em));*/
   padding: 5px;
 }
 
 .skill-card .title a {
-  color: #fff;
+  color: #2a2a2a;
 }
 
 /*social icons*/
@@ -314,7 +363,7 @@ input[type="text"]{
 /* Resopnsive*/
 @media only screen and (max-width: 767px) {
   .project-box {
-    margin-top: 18rem;
+    margin-top: 10rem;
   }
 }
 
@@ -338,19 +387,19 @@ input[type="text"]{
 
 @media (max-width: 800px) {
 	.skill-card .data {
-		transform: translateY(calc(0px));
+		/*transform: translateY(calc(0px));*/
 	  }
   }
 
 @media (max-width: 377px) {
 	.skill-card .data {
-		transform: translateY(calc(90px + 4em));
+		/*transform: translateY(calc(90px + 4em));*/
 	  }
   }
   @media (min-width: 960px) {
     .skill-card .data {
       color: #fff;
-      transform: translateY(calc(80px + 4em));
+      /*transform: translateY(calc(80px + 4em));*/
       padding: 5px;
     }
 }
