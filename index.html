@@ -5,28 +5,17 @@
     <title>Saroj Tailor | Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
-    <meta name="description"
-        content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
-    <!-- Robot.txt -->
-    <meta name="robots" content="index,follow" />
-    <meta name="Googlebot" content="index,follow" />
-    <meta name="AdsBot-Google" content="index,follow" />
-    <meta property="og:title" content="Saroj Tailor | Home">
-
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
 
     <meta name="application-name" content="Saroj Tailor | Portfolio" />
     <meta name="apple-mobile-web-app-title" content="Saroj Tailor | Portfolio" />
-    <meta name="summary"
-        content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
+
     <!--For Dark/Light mode Toggle-->
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css"> 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png"> 
@@ -61,17 +51,17 @@
 
 
     <!-- Home Section -->
-        <div class="text center col-md-6 col-sm-12 pt-5" style="left: 30%; top: 17%;">
+        <div class="text center col-md-6 col-sm-12 pt-5" style="left: 30%; top: 24%;">
             <div class="center">
                 <div>
-                     <img src="assets/images/nim.gif" alt="">
+                     <img class="gif-hello" src="assets/images/nim.gif" alt="">
                 </div>
             </div>
         </div>
 
     <div class="text col-md-5 col-sm-12 pt-5 right_home_box" >
         <div class="head_home">
-            Hello there! <br><!-- <span class="wave">👋</span> --><span>I'm Saroj Tailor</span>
+            <span class="home_greet">Hello! Nice to meet you.</span> <br><!-- <span class="wave">👋</span> --><span id="name">I'm Saroj Tailor</span>
         </div>
             
        <!--  <div>
@@ -81,38 +71,18 @@
             </p>
         </div> -->
         <div>
-            <p class="left_home">A Computer Science engineer turned designer. I love to get my hands dirty on both strategic and hands-on level.
+            <p class="left_home">A Computer Science engineer turned designer. I love to get my hands dirty on both strategic and hands-on level. Moving forward, I would love to research and build solutions that address complex problems in a collaborative manner.​​​​​​​
 
-            ​​​​​​​<p class="left_home">Moving forward, I would love to research and build solutions that address complex problems in a collaborative manner.​​​​​​​</p>
+            
             <p class="left_home" style="font-weight: bold; font-size: 17px;">Currently looking for full-time opportunities in <span style="color: #DA3847">UX/Product Design</span></p>
         </div>
 
         <div>
-            <a class="btn work_btn" href="projects.html"><span>See all work</span></a>
-            <a class="btn res_btn" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank"><span>Resume</span></a>
+            <!-- <a class="btn work_btn" href="projects.html"><span>See all work</span></a> -->
+            <!-- <a class="btn res_btn" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank"><span>Resume</span></a> -->
         </div>
 
-        <div>
-                <div class="social-icons">
-
-                    <a class="social-icon behance" href="https://www.behance.net/sarojt" target="_blank" rel="author">
-                        <i class="fab fa-behance"></i>
-                    </a>
-
-                    <a class="social-icon linkedin" href="https://www.linkedin.com/in/saroj-tailor/" target="_blank" rel="author">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <a class="social-icon medium" href="https://medium.com/@sarojtt" target="_blank" rel="author">
-                        <i class="fab fa-medium-m"></i>
-                    </a>
-
-                    <a class="social-icon fivehun" href="https://500px.com/sarojt" target="_blank" rel="author">
-                        <i class="fab fa-500px"></i>
-                    </a>
-
-                </div>
-            </div>
+      
         </div>
 
 
@@ -123,7 +93,7 @@
 
         <!-- PROJECTS -->
 
-          <div class="container pt-5" style="width: 100%; min-height: 80%;">
+          <div id="projects" class="container pt-5" style="width: 100%; min-height: 80%;">
 
     <div class="container-fluid project-box">
       <!-- <input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search for tags.. (eg. React.js, Python, JavaScript etc.)"> -->

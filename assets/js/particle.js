@@ -3,13 +3,30 @@
 particlesJS('particles-js', {
 	particles: {
 		number: {
-			value: 14,
-			
+			value: 140,
+			density: {
+				enable: true,
+				value_area: 800
+			}
 		},
 		color: {
 			value: [ '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0' ]
 		},
-		
+		shape: {
+			type: 'circle',
+			stroke: {
+				width: 0,
+				color: '#fff'
+			},
+			polygon: {
+				nb_sides: 5
+			},
+			image: {
+				src: 'https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png',
+				width: 100,
+				height: 100
+			}
+		},
 		
 		opacity: {
 			value: 1,

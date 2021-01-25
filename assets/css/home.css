@@ -41,6 +41,11 @@ html[data-theme="dark"] {
   font-weight: bold;
 }
 
+
+.proj_info{
+  margin: 3rem 0;
+}
+
 .text {
   font-size: 40px;
   top: 50%;
@@ -50,9 +55,23 @@ html[data-theme="dark"] {
   /*position: absolute;*/
 }
 
+.proj_text{
+  display: inline-block;
+}
+
+.proj_text p{
+  font-size: 15px;
+  display: block;
+  line-height: 22px;
+}
+
 .animated-text span {
   display: none;
   line-height: 1;
+}
+
+#mobile-demo{
+  padding: 90px;
 }
 
 .animated-text span.active {
@@ -110,23 +129,74 @@ html[data-theme="dark"] {
   height: var(--link-size);
   margin: 8px -4px;
   background-color: var(--bg-icon);
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   /*box-shadow: 2px 5px 5px var(--shadow-col);*/
   text-decoration: none;
   transition: var(--trans-props);
 }
 
+.img-col{
+  display: inline-block;
+}
+
+.img-col .pet-image{
+  width: 120%;
+}
+
+.pet_head h4{
+  font-family: 'Playfair Display', serif;
+}
+
+.pet_head p {
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.pet-desc {
+  text-align:  center;
+  margin-top: 20px;
+}
+
+.pet-desc a , .pet-desc a:hover{
+  color: #DA3847;
+}
+
+
+
+.image-contain h3{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.image-contain p{
+  line-height: 22px;
+    font-size: 16px;
+}
+
+.space-medium{
+  margin: 7rem;
+}
+
+.space-small{
+  margin: 4rem;
+}
+
+
 .social-icon i {
-  margin: auto;
+  /*margin: auto;*/
   font-size: 24px;
   color: #1769ff;
   z-index: 1;
-  margin : 20px 11px;
+  margin : 0px 11px;
   transition: var(--trans-props);
 }
 
+.scrolled{
+  opacity: 0.6;
+}
+
 .social-icons i:hover:before{
-  color: #DA3847
+  color: #DA3847;
 }
 
 .social-icon i:hover {
@@ -198,15 +268,18 @@ a:hover {
 
 .footer-left .footer-text {
   width: 90%;
-  margin: 8px auto;
+  margin: 4.2rem auto;
 }
 
 .footer-left .footer-text p {
   font-size: 1rem;
   width: 80%;
   margin: auto;
+  font-family: 'Lekton', sans-serif;
+  font-weight: bold;
   text-align: center;
   display: block;
+  color: #737373;
 }
 
 .footer-left .footer-icons {
@@ -221,6 +294,10 @@ a:hover {
   background-color: #b4b2b2;
   border-radius: 50%;
   padding: 8px;
+}
+
+.footer-text a{
+  color: #da3847;
 }
 
 .footer-left .footer-icons a.instagram {
@@ -378,3 +455,15 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 768px){
+
+  .right_home_box{
+    left: 56% !important;
+  }
+  .text .gif-hello{
+    display: none;
+  }
+  .arrow{
+    display: none;
+  }
+}

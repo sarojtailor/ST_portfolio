@@ -4,6 +4,8 @@ $(document).ready(function () {
   $(".sidenav").sidenav();
 });
 
+
+
 //Get the top button
 var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -31,19 +33,49 @@ function topFunction() {
 let header = $(`
 <nav class="fixed-top">
 <div class="nav-wrapper">
-    <!-- <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>-->
-    <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
+    
+    <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger" onclick="neww()"><i
             class="material-icons">menu</i></a>
     <ul class=" hide-on-med-and-down">
-        <li><a class="white-text font_nav" href="index.html">Home</a></li>
-        <li><a class="white-text" href="projects.html">Projects</a></li>
-        <li><a class="white-text" href="skill.html">About</a></li>
-        <li><a class="white-text" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
+        
+        <li><a  class="white-text font_nav" href="index.html">Projects</a></li>
+        <li><a  class="white-text" href="about.html">About</a></li>
+        <li><a  class="white-text" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
 
     </ul>
         <div class="right">
                 <div class="social-icons">
+
+                    <a class="social-icon behance" href="https://www.behance.net/sarojt" target="_blank" rel="author">
+                        <i class="fab fa-behance"></i>
+                    </a>
+
+                    <a class="social-icon linkedin" href="https://www.linkedin.com/in/saroj-tailor/" target="_blank" rel="author">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a class="social-icon medium" href="https://medium.com/@sarojtt" target="_blank" rel="author">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+
+                    <a class="social-icon fivehun" href="https://500px.com/p/sarojt" target="_blank" rel="author">
+                        <i class="fab fa-500px"></i>
+                    </a>
+
+                </div>
+            </div>
+</div>
+</nav>
+
+<!--Side Nav Bar -->
+<ul class="sidenav" id="mobile-demo">
+
+<li><a href="index.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
+  <div class="social-icons">
 
                     <a class="social-icon behance" href="" target="_blank" rel="author">
                         <i class="fab fa-behance"></i>
@@ -62,52 +94,20 @@ let header = $(`
                     </a>
 
                 </div>
-            </div>
-</div>
-</nav>
-
-<!--Side Nav Bar -->
-<ul class="sidenav" id="mobile-demo">
-<li><a href="index.html">Home</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="skill.html">Skills</a></li>
-
-<li><a href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
 
 
-<!--TOGGLE FOR LIGHT/DARK MODE-->
-        <li>
-        <label for="switch-2" class="theme-switch">
-        <input class="toggle-checkbox" type="checkbox" id="switch-2" name="theme" />
-          <div class='toggle-slot'>
-          <div class='sun-icon-wrapper'>
-          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
-          </div>
-          <div class='toggle-button-2 toggle-button'></div>
-          <div class='moon-icon-wrapper'>
-          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
-          </div>
-          </div>
-          </label>
-        </li>
 </ul>`);
 
-// let footer = $(`
-// <footer class="webintern-footer">
-// <div class="footer-left">
-//    <div class="footer-text">
-//     <p style="color:#cccccc">"Develop a passion for learning. If you do, you will never cease to grow."</p>
-//   </div>
-  
-//   <div class="footer-email">
-//     <a href="#" class="email-icon" style="color:#cccccc;">
-//       <i class="fas fa-envelope-open"></i>
-//     </a>
-//   </div>
-// </div>
+let footer = $(`
+<footer class="webintern-footer">
+<div class="footer-left">
+   <div class="footer-text">
+    <p>🧍‍♀️ Designed and <a target="_blank" href="https://github.com/sarojtailor">built</a> by Saroj Tailor © 2020</p>
+  </div>
+</div>
 
 
-// </footer>`);
+</footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
@@ -208,4 +208,38 @@ if (checkbox) {
         });
     });
   } 
+}
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+       var startY = $('.nav-wrapper').height() * 2;
+       if($(this).scrollTop() > startY) { 
+           $('.nav-wrapper').addClass('scrolled');
+       } else {
+           $('.nav-wrapper').removeClass('scrolled');
+       }
+    });
+});
+
+
+    $(document).ready(function () {
+        var url = window.location;
+        $('ul.hide-on-med-and-down a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.hide-on-med-and-down a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+    });
+
+
+function neww() {
+  var x = document.getElementById("mobile-demo");
+  var y = document.getElementById("side_overlay");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+       y.style.display = "none";
+
+  } else {
+    x.style.display = "block";
+    y.style.display = "block";
+  }
 }
