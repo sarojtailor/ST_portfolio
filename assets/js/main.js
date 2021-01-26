@@ -102,7 +102,7 @@ let footer = $(`
 <footer class="webintern-footer">
 <div class="footer-left">
    <div class="footer-text">
-    <p>🧍‍♀️ Designed and built by Saroj Tailor © 2020</p>
+    <p>🧍‍♀️ Designed and built by Saroj Tailor</p>
   </div>
 </div>
 

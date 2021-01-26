@@ -44,6 +44,7 @@ html[data-theme="dark"] {
 
 .proj_info{
   margin: 3rem 0;
+  background: #fbe3c5;
 }
 
 .text {
@@ -56,7 +57,7 @@ html[data-theme="dark"] {
 }
 
 .proj_text{
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .proj_text p{
