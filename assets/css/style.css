@@ -143,6 +143,21 @@ html {
 }
 
 
+/*----UI GALLERY---------*/
+
+.light_container{
+  display: inline-block;
+    background: blanchedalmond;
+    border-radius: 6%;
+}
+
+.light_container img{
+  width: 21%;
+}
+
+/*------END UI GALLERY-----*/
+
+
 /*slide animations on hover state*/
 #myBtn:hover {
   opacity: 1;
@@ -223,7 +238,7 @@ p {
 
 .head_home span#name{
   font-size: 40px;
-  color: #1a1a1a;
+  color: #2a2a2a;
 }
 
 .right_home_box{
@@ -735,7 +750,9 @@ textarea#message {
 
 .left_home{
   line-height: 25px;
-  font-weight: 400;font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2a2a2a;
 }
 
 /*Responsive*/
