@@ -38,7 +38,7 @@ let header = $(`
             class="material-icons">menu</i></a>
     <ul class=" hide-on-med-and-down">
         
-        <li><a  class="white-text font_nav" href="index.html">Projects</a></li>
+        <li><a  class="white-text font_nav" href="index.html" class="active">Work</a></li>
         <li><a  class="white-text" href="about.html">About</a></li>
         <li><a  class="white-text" href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -71,7 +71,7 @@ let header = $(`
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
 
-<li><a href="index.html">Projects</a></li>
+<li><a href="index.html">Work</a></li>
 <li><a href="about.html">About</a></li>
 
 <li><a href="https://drive.google.com/file/d/1ms0G_7EKf5dallbRaQXvbJ224a2JOkk6/view" target="_blank">Resume</a></li>
